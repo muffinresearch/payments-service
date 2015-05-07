@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'rest_framework',
+    'payments_service.ui',
     'payments_service.braintree',
     'payments_service.status',
 )
@@ -87,6 +88,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# Static path for the app serving the payments UI.
+
+UI_STATIC = '/ui/static/'
 
 
 # Static files (CSS, JavaScript, Images)

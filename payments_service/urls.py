@@ -2,6 +2,8 @@ from django.conf.urls import include, url
 
 
 urlpatterns = [
+    url(r'^ui/',
+        include('payments_service.ui.urls', namespace='ui')),
     url(r'^braintree/',
         include('payments_service.braintree.urls', namespace='braintree')),
     url(r'',
